@@ -1,0 +1,59 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ],
+    "@babel/preset-react",
+    [
+      "minify",
+      {
+        "builtIns": false
+      }
+    ]
+  ],
+  "comments": false,
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./src"
+        ],
+        "alias": {
+          "react-filerobot-image-editor/src/": "react-filerobot-image-editor",
+          "react-filerobot-image-editor/src/utils/deepMerge": "react-filerobot-image-editor/lib/utils/deepMerge",
+          "react-image-editor-q/src/": "react-image-editor-q",
+          "react-image-editor-q/src/utils/deepMerge": "react-image-editor-q/lib/utils/deepMerge"
+        }
+      }
+    ],
+    [
+      "babel-plugin-styled-components"
+    ],
+    [
+      "@babel/plugin-transform-runtime"
+    ]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        [
+          "babel-plugin-styled-components",
+          {
+            "pure": true,
+            "displayName": false
+          }
+        ],
+        [
+          "transform-react-remove-prop-types",
+          {
+            "removeImport": true
+          }
+        ]
+      ]
+    }
+  }
+}

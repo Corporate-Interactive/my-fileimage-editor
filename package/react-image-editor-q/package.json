@@ -2,14 +2,13 @@
   "name": "react-image-editor-q",
   "version": "1.0.19",
   "description": "SSR-safe React wrapper around Filerobot Image Editor",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "files": [
-    "dist"
+    "lib"
   ],
   "scripts": {
-    "build": "rollup -c"
+    "build:lib": "rimraf lib && cross-env BABEL_ENV=production NODE_ENV=production babel src -d lib --config-file ../../babel.config.json -D"
   },
   "repository": {
     "type": "git",
