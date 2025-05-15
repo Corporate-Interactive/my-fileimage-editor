@@ -1,0 +1,57 @@
+{
+  "name": "react-image-editor-q",
+  "version": "1.0.19",
+  "description": "SSR-safe React wrapper around Filerobot Image Editor",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Corporate-Interactive/my-fileimage-editor.git"
+  },
+  "keywords": [
+    "image-editor",
+    "react",
+    "filerobot"
+  ],
+  "author": "anton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Corporate-Interactive/my-fileimage-editor/issues"
+  },
+  "homepage": "https://github.com/Corporate-Interactive/my-fileimage-editor#readme",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "react-konva": ">=17.0.0",
+    "styled-components": ">=5.3.5"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.1",
+    "@scaleflex/icons": "2.10.27",
+    "@scaleflex/ui": "2.10.27",
+    "konva": "9.3.6",
+    "prop-types": "15.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-react": "^7.27.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "canvas": "^3.1.0",
+    "rollup": "^3.0.0",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.34.0",
+    "typescript": "^5.0.0"
+  }
+}
